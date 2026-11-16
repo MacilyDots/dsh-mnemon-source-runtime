@@ -1,0 +1,25 @@
+# 实验性组合草案，尚未完成隔离宿主验证，请勿安装。
+# 保留 Documents 和 Memory Spaces；实际 Source instanceKey 必须在宿主核验。
+- insert:
+    - id: guard-runtime
+      name: '@macily.dots/dsh-mnemon-source-runtime'
+
+- id: mnemon-source-runtime
+  disabled: true
+
+- id: mnemon-source-skills
+  disabled: true
+
+- id: mnemon-source-memory-spaces
+  config:
+    providers:
+      - use: dsh-mnemon-provider-mnemon-native
+        instanceId: mnemon-native
+
+- id: mnemon-strategy-scoped
+  disabled: false
+  config:
+    sourceKeys:
+      - source:guard-runtime
+      - source:mnemon-source-documents
+      - source:mnemon-source-memory-spaces

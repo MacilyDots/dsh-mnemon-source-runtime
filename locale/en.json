@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Mnemon Runtime Guard",
+    "description": "带 pinned 写保护的运行时记忆 Source。被固定的条目对模型和后台维护只读，只能从记忆系统页面解锁修改。安装后自动新增独立 Source、禁用官方 runtime 避免双写，并只加载本地 provider。数据独立于现有记忆。"
+  }
+}
