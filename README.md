@@ -16,10 +16,13 @@
 
 ## 安装
 
-先确保已安装官方 `dsh-mnemon`（DSH Starter 默认带）。然后通过 DSH 的插件页添加本包：
+先确保已安装官方 `dsh-mnemon`（DSH Starter 默认带）。本包**未发布到 npm**，需要从 GitHub 源码安装：
 
-- 插件 → 添加插件 → 输入包名 `@macily.dots/dsh-mnemon-source-runtime`，或
-- 若从源码安装：插件 → 添加插件 → 本地目录 → 选本仓库根目录。
+```sh
+git clone https://github.com/MacilyDots/dsh-mnemon-source-runtime.git
+```
+
+然后在 DSH 插件页：**插件 → 添加插件 → 本地目录 → 选刚 clone 的仓库根目录**。
 
 安装后重启 DSH。本包自带的 `cordis.patch.yml` 会自动完成：
 
